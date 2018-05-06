@@ -21,11 +21,15 @@ To mask an email, all names must be converted to lowercase and all letters betwe
 
 A phone number is a string consisting of only the digits 0-9 or the characters from the set {'+', '-', '(', ')', ' '}. You may assume a phone number contains 10 to 13 digits.
 
-The last 10 digits make up the local number, while the digits before those make up the country code. Note that the country code is optional. We want to expose only the last 4 digits and mask all other digits.
+The last 10 digits make up the local number, while the digits before those make up the country code. Note that the country code is optional.
+We want to expose only the last 4 digits and mask all other digits.
 
 The local number should be formatted and masked as "***-***-1111", where 1 represents the exposed digits.
 
-To mask a phone number with country code like "+111 111 111 1111", we write it in the form "+***-***-***-1111".  The '+' sign and the first '-' sign before the local number should only exist if there is a country code.  For example, a 12 digit phone number mask should start with "+**-".
+To mask a phone number with country code like "+111 111 111 1111", we write it in the form "+***-***-***-1111". 
+The '+' sign and the first '-' sign before the local number should only exist if there is a country code.
+
+For example, a 12 digit phone number mask should start with "+**-".
 
 Note that extraneous characters like "(", ")", " ", as well as extra dashes or plus signs not part of the above formatting scheme should be removed.
 
