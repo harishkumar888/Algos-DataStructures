@@ -1,4 +1,5 @@
-/*Maximum difference between two elements such that larger element appears after the smaller number.
+/*
+Maximum difference between two elements such that larger element appears after the smaller number.
 Given an array arr[] of integers, find out the maximum difference between any two elements such that larger element appears after the smaller number.
 
 Examples :
@@ -9,7 +10,8 @@ Explanation : The maximum difference is between 10 and 2.
 
 Input : arr = {7, 9, 5, 6, 3, 2}
 Output : 2
-Explanation : The maximum difference is between 9 and 7.*/
+Explanation : The maximum difference is between 9 and 7.
+*/
 
 
 #include <iostream>
