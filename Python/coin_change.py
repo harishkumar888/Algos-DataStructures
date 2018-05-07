@@ -1,5 +1,8 @@
 from collections import defaultdict
 
+# Algorithms to calculate number of ways to make change for a given amount.
+
+# Memoized DP 
 def make_change(n):
     dp = [0]*(n+1)
     dp[0] = 1
@@ -8,6 +11,7 @@ def make_change(n):
             dp[i] += dp[i-c]
     return dp[n]
 
+# Recursive 
 def count(S, m, n ):
     if (n == 0): return 1
     if (n < 0): return 0
