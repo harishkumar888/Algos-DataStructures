@@ -17,18 +17,21 @@ Explanation : The maximum difference is between 9 and 7.
 #include <iostream>
 
 int maxDifference(int arr[], int arr_size){
-  int min = 0;
-  int max = 1;
+  int max_diff = arr[1] - arr[0];
+  int min_element = arr[0];
+
   for(int i=0; i<arr_size; ++i){
-    if(arr[i]<arr[min] && i<max){
-      min = i;
+    if(arr[i]-min_element > max_diff){
+      max_diff = arr[i]-min_element;
     }
-    else if(arr[i]>arr[max] && i>min){
-      max = i;
+    if(arr[i]<min_element){
+      min_element = arr[i];
     }
   }
-  return arr[max]-arr[min];
+  return max_diff;
 }
+
+
 
 int main(){
   int a[] = {7, 9, 5, 6, 3, 2, 2, 2, 1};
