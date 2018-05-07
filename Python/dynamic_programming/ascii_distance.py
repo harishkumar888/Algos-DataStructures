@@ -1,3 +1,6 @@
+ # Levenshtein distance(Edit distance) between two words is the minimum number of single-character edits
+ # (insertions, deletions or substitutions) required to change one word into the other.
+
 def ascii_deletion_distance(s1, s2):
     list1 = compareLetters(s1, s2)
     list2 = compareLetters(s2, s1)
