@@ -15,4 +15,4 @@ def bracket_match(bracket_string):
       br_stack.pop()
   return len(br_stack)+closing_br
 
-print(bracket_match("(()"))
+print(bracket_match("(((()"))

@@ -25,6 +25,7 @@ def binary_search_recursive(list, x, left, right):
             return mid
     return -1
 
+# Incorrect and needs to be fixed.
 def find_closest(list, x, left, right):
     while(right>=left):
         mid = int((left+right)/2)
@@ -36,7 +37,7 @@ def find_closest(list, x, left, right):
             return mid
     return min(abs(x-list[mid]), abs(x-list[mid-1]), abs(x-list[mid+1]))
 
-# print(find_closest(sorted_list, 39, 0, len(sorted_list)))
+# print(find_closest(sorted_list, 37, 0, len(sorted_list)))
 print(binary_search_iterative(sorted_list, 39))
 print(binary_search_recursive(sorted_list, 39, 0, len(sorted_list)))
 
